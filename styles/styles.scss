@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.flat {
+  display: grid;
+  height: 100vh;
+  background-color: bisque;
+  grid-template-columns: 20px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 20px;
+  grid-template-rows: 20px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 20px;
+}
+
+// ROOMS
+@import 'mainborder';
+@import 'livingRoom';
+@import 'bathRoom';
+@import 'bedRoom1';
+@import 'bedRoom2';
+@import 'room';
+
+// ELEMENTS
+@import 'doors';
+@import 'beds';

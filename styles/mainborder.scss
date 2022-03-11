@@ -1,0 +1,22 @@
+$bg-mainBorder: green;
+
+.mainBorder-left {
+  background-color: $bg-mainBorder;
+  grid-column: 1 / span 1;
+  grid-row: 1 / end;
+}
+.mainBorder-right {
+  background-color: $bg-mainBorder;
+  grid-column: 25 / span 1;
+  grid-row: 1 / end;
+}
+.mainBorder-top {
+  background-color: $bg-mainBorder;
+  grid-column: 1 / end;
+  grid-row: 1 / span 1;
+}
+.mainBorder-bottom {
+  background-color: $bg-mainBorder;
+  grid-column: 1 / end;
+  grid-row: 25 / span 1;
+}
