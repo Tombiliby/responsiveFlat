@@ -1,0 +1,79 @@
+.workingPlan-container {
+  background-color: blue;
+  position: relative;
+  .workingPlan {
+    position: absolute;
+    right: 0;
+    .plan {
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      height: 270px;
+      width: 56px;
+
+      .sink {
+        position: absolute;
+        top: 40px;
+        left: 11px;
+        border: 1px solid $border-elements-color;
+        background-color: #fff;
+        height: 60px;
+        width: 34px;
+        border-radius: 4px;
+        [class^="sink"] {
+          border-radius: 4px;
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          margin: 0 auto;
+        }
+        .sink-left {
+          height: 32px;
+          width: 28px;
+          margin-top: 2px;
+        }
+        .sink-right {
+          margin-top: 2px;
+          height: 20px;
+          width: 28px;
+        }
+      }
+      .cookingPlate {
+        position: absolute;
+        height: 56px;
+        width: 56px;
+        top: 150px;
+        border: 1px solid $border-elements-color;
+        border-width: 1px 0 1px 0;
+        .plat {
+          position: absolute;
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          border-radius: 1000px;
+        }
+        .plat-1 {
+          top: 5px;
+          left: 5px;
+          width: 20px;
+          height: 20px;
+        }
+        .plat-2 {
+          top: 5px;
+          right: 5px;
+          width: 20px;
+          height: 20px;
+        }
+        .plat-3 {
+          bottom: 5px;
+          left: 5px;
+          width: 20px;
+          height: 20px;
+        }
+        .plat-4 {
+          bottom: 5px;
+          right: 5px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.washbasin-container {
+  position: relative;
+
+  .washbasin {
+    position: absolute;
+
+    .basin {
+      overflow: hidden;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      height: 30px;
+      width: 40px;
+      border-radius: 2000px 2000px 0 0;
+      .inner {
+        width: 36px;
+        height: 20px;
+        border: 1px solid $border-elements-color;
+        border-radius: 2000px 2000px 0 0;
+        margin: 2px auto 0 auto;
+      }
+    }
+    .tap {
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      bottom: 3px;
+      left: 18px;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+    &.bottom {
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.diningTable-container {
+  position: relative;
+  .diningTable {
+    position: absolute;
+    display: flex;
+    align-items: stretch;
+
+    .table {
+      .inner {
+        width: 85px;
+        height: 100%;
+        border: 1px solid $border-elements-color;
+        background-color: #fff;
+      }
+    }
+
+    .sideChairs {
+      padding: 10px 0;
+      &.right {
+        .chair {
+          transform: scaleX(-1);
+        }
+      }
+    }
+
+    .chair:nth-child(4) {
+      //display: none;
+    }
+
+    .chair {
+      position: relative;
+      overflow: hidden;
+      margin: 10px 0;
+      .back {
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        border: 1px solid $border-elements-color;
+        background-color: #fff;
+        border-radius: 2px 6px 6px 2px;
+      }
+      .sitting {
+        width: 10px;
+        height: 38px;
+        margin: 1px 0px 1px 9px;
+        border: 1px solid $border-elements-color;
+        border-width: 1px 0 1px 1px;
+        background-color: #fff;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+  }
+}

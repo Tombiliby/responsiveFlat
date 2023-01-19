@@ -1,0 +1,111 @@
+.lounge-container {
+  .lounge {
+    position: relative;
+
+    .table {
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 70px;
+      height: 110px;
+    }
+
+    .armchair {
+      position: absolute;
+      &-1 {
+        left: 100px;
+      }
+      &-2 {
+        top: 40px;
+        left: 230px;
+      }
+      .back {
+        position: relative;
+        z-index: 3;
+        border: 1px solid $border-elements-color;
+        background-color: #fff;
+        width: 64px;
+        height: 14px;
+        margin: 0 2px -8px 2px;
+        border-radius: 8px 8px 6px 6px;
+      }
+      .sittingZone {
+        display: flex;
+        .sitting {
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          width: 54px;
+          height: 54px;
+          border-radius: 0 0 6px 6px;
+        }
+        .armrest {
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          height: 52px;
+          width: 14px;
+          position: relative;
+          z-index: 2;
+          border-radius: 4px 4px 6px 6px;
+          &.left {
+            margin-right: -6px;
+          }
+          &.right {
+            margin-left: -6px;
+          }
+        }
+      }
+      &.right {
+        transform-origin: 0;
+        transform: rotate(70deg);
+      }
+    }
+
+    .couch {
+      position: absolute;
+      left: 0px;
+      top: 55px;
+      
+      .back {
+        position: relative;
+        z-index: 3;
+        border: 1px solid $border-elements-color;
+        background-color: #fff;
+        width: 174px;
+        height: 14px;
+        margin: 0 2px -8px 2px;
+        border-radius: 8px 8px 6px 6px;
+      }
+      .sittingZone {
+        display: flex;
+        .sitting {
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          width: 54px;
+          height: 54px;
+          border-radius: 0 0 6px 6px;
+        }
+        .armrest {
+          border: 1px solid $border-elements-color;
+          background-color: #fff;
+          height: 52px;
+          width: 14px;
+          position: relative;
+          z-index: 2;
+          border-radius: 4px 4px 6px 6px;
+          &.left {
+            margin-right: -6px;
+          }
+          &.right {
+            margin-left: -6px;
+          }
+        }
+      }
+      &.left {
+        transform-origin: top left;
+        transform: rotate(90deg) scaleY(-1);
+      }
+    }
+  }
+}
