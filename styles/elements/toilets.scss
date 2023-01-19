@@ -1,0 +1,36 @@
+.toilet-container {
+  position: relative;
+
+  .toilet {
+    position: absolute;
+    .sitting {
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 30px;
+      height: 36px;
+      margin: 0 auto;
+      border-radius: 2000px 2000px 0 0;
+
+    }
+    .back {
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 38px;
+      height: 14px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .button {
+      border: 1px solid $border-elements-color;
+      margin: 0 auto;
+      height: 4px;
+      width: 4px;
+      margin-top: 5px;
+      border-radius: 20000px;
+    }
+
+    &.bottom {
+      bottom: 0;
+    }
+  }
+}

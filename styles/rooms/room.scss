@@ -1,0 +1,11 @@
+.room {
+  background-color: rgb(20, 141, 115);
+  grid-row: 20 / 25;
+  grid-column: 14 / 17;
+
+  &-door {
+    grid-row: 19 / span 1;
+    grid-column: 14 / 17;
+  }
+
+}

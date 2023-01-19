@@ -1,0 +1,81 @@
+.bed-container {
+  position: relative;
+  
+  .bed {
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    border: 1px solid $border-elements-color;
+    background-color: #fff;
+    top: 0;
+
+    .pillow1 {
+      position: absolute;
+      top: 11px;
+      left: 20px;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 60px;
+      height: 30px;
+    }
+
+    .pillow2 {
+      position: absolute;
+      top: 11px;
+      right: 20px;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 60px;
+      height: 30px;
+    }
+
+    .comforter {
+      border-top: 1px solid $border-elements-color;
+      background-color: #fff;
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      height: calc(100% - 40px);
+    }
+
+    .bedsideTable1 {
+      position: absolute;
+      top: -1px; /* Bed bordure */
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 25px;
+      height: 25px;
+      margin-left: -25px;
+    }
+
+    .bedsideTable2 {
+      position: absolute;
+      top: -1px; /* Bed bordure */
+      right: 0px;
+      border: 1px solid $border-elements-color;
+      background-color: #fff;
+      width: 25px;
+      height: 25px;
+      margin-right: -25px;
+    }
+
+    &.right {
+      right: 0;
+    }
+    &.single {
+      width: 90px;
+      height: 190px;
+      .bedsideTable1 {
+        display: none;
+      }
+      &.right {
+        .bedsideTable1 {
+          display: block;
+        }
+        .bedsideTable2 {
+          display: none;
+        }
+      }
+    }
+  }
+}

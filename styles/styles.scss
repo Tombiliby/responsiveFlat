@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -10,14 +13,35 @@ body {
   grid-template-rows: 20px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 20px;
 }
 
+@import "./variables.scss";
+
 // ROOMS
-@import 'mainborder';
-@import 'livingRoom';
-@import 'bathRoom';
-@import 'bedRoom1';
-@import 'bedRoom2';
-@import 'room';
+@import "./rooms/livingRoom";
+@import "./rooms/bathRoom";
+@import "./rooms/bedRoom1";
+@import "./rooms/bedRoom2";
+@import "./rooms/room";
 
 // ELEMENTS
-@import 'doors';
-@import 'beds';
+@import "./elements/doors";
+@import "./elements/beds";
+@import "./elements/toilets";
+@import "./elements/washbasins.scss";
+@import "./elements/diningTables.scss";
+@import "./elements/lounges.scss";
+@import "./elements/workingPlan.scss";
+
+// WALLS
+@import "./walls/mainborder.scss";
+
+
+// DiscretMod
+.bed-container,
+.diningTable-container,
+.door-container,
+.lounge-container,
+.toilet-container,
+.washbasin-container,
+.workingPlan-container {
+  opacity: .2;
+}

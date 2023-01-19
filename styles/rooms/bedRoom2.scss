@@ -1,0 +1,15 @@
+.bedRoom2 {
+  background-color: rgb(246, 255, 127);
+  grid-row: 20 / 25;
+  grid-column: 18 / 25;
+
+  &-door {
+    grid-row: 19 / span 1;
+    grid-column: 18 / 21;
+  }
+
+  &-bed {
+    grid-row: 22 / span 3;
+    grid-column: 18 / 18;
+  }
+}
